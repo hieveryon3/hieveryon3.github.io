@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color:hsl(217 32.4% 86.1%);
+    font-family: 'Outfit', system-ui, sans-serif; 
+    display: flex;
+    /* display es una propiedad CSS fundamental que define cómo se comporta y se muestra un elemento en la página. */
+    /* Es como decirle al navegador:
+    “¿Este elemento se comporta como un bloque?
+    “¿Como un texto en línea?”
+    “¿Como un contenedor flexible?”
+    “¿Como una tabla?”
+    etc. */
+    /* display: flex activa el modelo Flexbox en un contenedor. Esto significa que sus elementos hijos pasan a ser elementos flexibles, y se pueden organizar y alinear fácilmente en filas o columnas. */
+    justify-content: center; /*centra los elementos horizontalmente*/
+    align-items: center; /*centra los elementos verticalmente*/
+    padding: 1rem;
+}
+
+.container{
+   max-width: 23.4375rem;
+   width: 100%;
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+   transition: box-shadow 0.5s ease, transform 0.3s ease;
+   /*es una propiedad de CSS que aplica una sombra a un elemento como si estuviera elevado sobre el fondo
+   
+   box-shadow: offset-x offset-y blur-radius spread-radius color;
+
+    offset-x: cuánto se desplaza la sombra horizontalmente.
+    offset-y: cuánto se desplaza verticalmente.
+    blur-radius: qué tan difusa es la sombra.
+    spread-radius: (opcional) qué tanto se expande.
+    color: el color de la sombra.
+   
+   */
+}
+
+.container:hover{
+    transform: translateY(-20px);
+    box-shadow: 50px 50px 25px rgba(0, 0, 0, 0.2);
+}
+
+.container__section{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+.section__titulo{
+    font-weight: 700;
+    font-size: 22px;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+}
+.section__parrafo{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    color: hsla(216, 15%, 48%, 0.8);
+}
+
+.container__img{
+    width: 100%;
+    border-radius: 0.8rem;
+    height: auto;
+}
